@@ -9,7 +9,6 @@ def download_model():
     
     # Load biến môi trường từ .env (nếu có)
     load_dotenv()
-
     # Lấy HF_TOKEN từ biến môi trường
     HF_TOKEN = os.getenv("HF_TOKEN")
 
@@ -20,7 +19,6 @@ def download_model():
     login(token=HF_TOKEN)
     model_path = hf_hub_download(
         repo_id="Qwen/Qwen2.5-7B-Instruct-GGUF",
-        filename="qwen2.5-7b-instruct-fp16-00001-of-00004.gguf",
         local_dir="D:\TestChatBotAPIWITHSpark"
     )
     

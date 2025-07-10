@@ -9,7 +9,7 @@ def download_model():
     
     # Load biến môi trường từ .env (nếu có)
     load_dotenv()
-    HF_TOKEN="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"
+ 
     # Lấy HF_TOKEN từ biến môi trường
     HF_TOKEN = os.getenv("HF_TOKEN")
 
